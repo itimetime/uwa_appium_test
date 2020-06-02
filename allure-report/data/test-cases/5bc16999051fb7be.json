@@ -1,0 +1,138 @@
+{
+  "uid" : "5bc16999051fb7be",
+  "name" : "test_run[case1]",
+  "fullName" : "testrun.TestClass#test_run",
+  "historyId" : "f27a29491d6aeb38e80a035c05e49c75",
+  "time" : {
+    "start" : 1590734113698,
+    "stop" : 1590734121798,
+    "duration" : 8100
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "background",
+      "time" : {
+        "start" : 1590734113698,
+        "stop" : 1590734118821,
+        "duration" : 5123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "15f5cc641c5afee",
+        "name" : "操作参数",
+        "source" : "15f5cc641c5afee.attach",
+        "type" : "text/plain",
+        "size" : 5
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "get_activity",
+      "time" : {
+        "start" : 1590734121690,
+        "stop" : 1590734121796,
+        "duration" : 106
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f2e866b48fc04c2b",
+        "name" : "操作参数",
+        "source" : "f2e866b48fc04c2b.attach",
+        "type" : "text/plain",
+        "size" : 3
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "assert",
+      "time" : {
+        "start" : 1590734121797,
+        "stop" : 1590734121798,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f1abc27b4b32b14c",
+        "name" : "断言内容",
+        "source" : "f1abc27b4b32b14c.attach",
+        "type" : "text/plain",
+        "size" : 88
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ {
+      "uid" : "47580075169f464b",
+      "name" : "log",
+      "source" : "47580075169f464b.txt",
+      "type" : "text/plain",
+      "size" : 400
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "在理APP测试"
+  }, {
+    "name" : "suite",
+    "value" : "testrun"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-N6F5SUG"
+  }, {
+    "name" : "thread",
+    "value" : "9968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testrun"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5bc16999051fb7be.json",
+  "parameterValues" : [ "{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}" ]
+}

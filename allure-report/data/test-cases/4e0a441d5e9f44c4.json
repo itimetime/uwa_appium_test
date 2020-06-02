@@ -1,0 +1,138 @@
+{
+  "uid" : "4e0a441d5e9f44c4",
+  "name" : "test_run[case0]",
+  "fullName" : "testrun.TestClass#test_run",
+  "historyId" : "0381bab8f0472e9fde37430c6a9d0ef0",
+  "time" : {
+    "start" : 1590734112987,
+    "stop" : 1590734113693,
+    "duration" : 706
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "setting",
+      "time" : {
+        "start" : 1590734112988,
+        "stop" : 1590734112990,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f008ac12ecf46706",
+        "name" : "操作参数",
+        "source" : "f008ac12ecf46706.attach",
+        "type" : "text/plain",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "get_activity",
+      "time" : {
+        "start" : 1590734113569,
+        "stop" : 1590734113690,
+        "duration" : 121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "feb7c8615e7b6967",
+        "name" : "操作参数",
+        "source" : "feb7c8615e7b6967.attach",
+        "type" : "text/plain",
+        "size" : 3
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "assert",
+      "time" : {
+        "start" : 1590734113691,
+        "stop" : 1590734113693,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e579e17b59aaa41b",
+        "name" : "断言内容",
+        "source" : "e579e17b59aaa41b.attach",
+        "type" : "text/plain",
+        "size" : 88
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ {
+      "uid" : "91944184c728b8d",
+      "name" : "log",
+      "source" : "91944184c728b8d.txt",
+      "type" : "text/plain",
+      "size" : 605
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "在理APP测试"
+  }, {
+    "name" : "suite",
+    "value" : "testrun"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-N6F5SUG"
+  }, {
+    "name" : "thread",
+    "value" : "9968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testrun"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{\"appPackage\":\"com.uwa.mproduct\",\"appActivity\":\"com.uwa.mproduct.MainActivity\"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4e0a441d5e9f44c4.json",
+  "parameterValues" : [ "{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{\"appPackage\":\"com.uwa.mproduct\",\"appActivity\":\"com.uwa.mproduct.MainActivity\"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}" ]
+}

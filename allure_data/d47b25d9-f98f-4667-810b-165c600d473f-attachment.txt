@@ -1,0 +1,3 @@
+INFO     root:testrun.py:39 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+INFO     root:driver_operate.py:53 background:['3']
+INFO     root:driver_operate.py:153 进行断言,.MainActivity?.MainActivity

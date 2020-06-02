@@ -1,0 +1,126 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "在理APP测试",
+    "children" : [ {
+      "name" : "test_run[case0]",
+      "uid" : "4e0a441d5e9f44c4",
+      "parentUid" : "23515e87ea86e22e18b26633439bb853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590734112987,
+        "stop" : 1590734113693,
+        "duration" : 706
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{\"appPackage\":\"com.uwa.mproduct\",\"appActivity\":\"com.uwa.mproduct.MainActivity\"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}" ]
+    }, {
+      "name" : "test_run[case1]",
+      "uid" : "5bc16999051fb7be",
+      "parentUid" : "23515e87ea86e22e18b26633439bb853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590734113698,
+        "stop" : 1590734121798,
+        "duration" : 8100
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}" ]
+    }, {
+      "name" : "test_run[case2]",
+      "uid" : "76f94462789eccd5",
+      "parentUid" : "23515e87ea86e22e18b26633439bb853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590734121804,
+        "stop" : 1590734133724,
+        "duration" : 11920
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', \"//*[@text = '同意']\"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}" ]
+    }, {
+      "name" : "test_run[case3]",
+      "uid" : "6c2608ff0951b8d9",
+      "parentUid" : "23515e87ea86e22e18b26633439bb853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590734133727,
+        "stop" : 1590734148248,
+        "duration" : 14521
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}" ]
+    }, {
+      "name" : "test_run[case4]",
+      "uid" : "42cea5a692e69597",
+      "parentUid" : "23515e87ea86e22e18b26633439bb853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590734148256,
+        "stop" : 1590734183517,
+        "duration" : 35261
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}" ]
+    }, {
+      "name" : "test_run[case5]",
+      "uid" : "350b86480c16a15a",
+      "parentUid" : "23515e87ea86e22e18b26633439bb853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590734183535,
+        "stop" : 1590734203507,
+        "duration" : 19972
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}" ]
+    }, {
+      "name" : "test_run[case6]",
+      "uid" : "dc1ae543c31a2d1b",
+      "parentUid" : "23515e87ea86e22e18b26633439bb853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590734203510,
+        "stop" : 1590734223464,
+        "duration" : 19954
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}" ]
+    }, {
+      "name" : "test_run[case7]",
+      "uid" : "2122a92a3b42436",
+      "parentUid" : "23515e87ea86e22e18b26633439bb853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590734223476,
+        "stop" : 1590734239337,
+        "duration" : 15861
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}" ]
+    }, {
+      "name" : "test_run[case8]",
+      "uid" : "1b6425d35cc56a38",
+      "parentUid" : "23515e87ea86e22e18b26633439bb853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590734239349,
+        "stop" : 1590734254371,
+        "duration" : 15022
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}" ]
+    } ],
+    "uid" : "23515e87ea86e22e18b26633439bb853"
+  } ]
+}

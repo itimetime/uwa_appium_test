@@ -1,0 +1,3 @@
+INFO     root:testrun.py:39 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+INFO     root:driver_operate.py:53 swipe_left:['0.20', '5']
+INFO     root:driver_operate.py:153 进行断言,false?false

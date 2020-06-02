@@ -1,0 +1,5 @@
+INFO     root:testrun.py:39 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+INFO     root:driver_operate.py:53 click:['xpath', '//*[@index = 4]']
+INFO     root:driver_operate.py:53 send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+INFO     root:driver_operate.py:53 click:['xpath', '//*[@index = 7]']
+INFO     root:driver_operate.py:153 进行断言,false?false

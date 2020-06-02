@@ -1,0 +1,1 @@
+{'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}

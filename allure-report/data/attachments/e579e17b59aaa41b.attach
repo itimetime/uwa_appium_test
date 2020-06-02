@@ -1,0 +1,1 @@
+{'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}

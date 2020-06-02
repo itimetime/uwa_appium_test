@@ -1,0 +1,1 @@
+{'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}

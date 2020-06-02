@@ -1,0 +1,489 @@
+2020-05-29 10:01:12,843 - testrun.py - 56 -ERROR - 本地case_id1.0断言错误:None, .MainActivity
+2020-05-29 10:01:21,197 - testrun.py - 56 -ERROR - 本地case_id2.0断言错误:None, .MainActivity
+2020-05-29 10:01:32,368 - testrun.py - 56 -ERROR - 本地case_id3.0断言错误:None, 手机号/邮箱地址
+2020-05-29 10:05:58,767 - connectionpool.py - 749 -WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002720ECEF8E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /wd/hub/session
+2020-05-29 10:06:02,776 - connectionpool.py - 749 -WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002720ECEF9D0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /wd/hub/session
+2020-05-29 10:06:06,791 - connectionpool.py - 749 -WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002720ECEFF40>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /wd/hub/session
+2020-05-29 10:13:49,749 - testrun.py - 24 -INFO - 加载配置，并连接手机...
+2020-05-29 10:14:04,760 - testrun.py - 38 -INFO - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 10:14:04,761 - driver_operate.py - 50 -INFO - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 10:14:05,412 - driver_operate.py - 122 -INFO - 进行断言,.MainActivity?.MainActivity
+2020-05-29 10:14:05,427 - testrun.py - 38 -INFO - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 10:14:05,427 - driver_operate.py - 50 -INFO - background:['3']
+2020-05-29 10:14:13,066 - driver_operate.py - 122 -INFO - 进行断言,.MainActivity?.MainActivity
+2020-05-29 10:14:13,081 - testrun.py - 38 -INFO - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 10:14:13,082 - driver_operate.py - 50 -INFO - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 10:14:25,641 - driver_operate.py - 122 -INFO - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 10:14:25,656 - testrun.py - 38 -INFO - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 10:14:25,656 - driver_operate.py - 50 -INFO - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 10:14:39,281 - driver_operate.py - 122 -INFO - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 10:14:39,288 - testrun.py - 38 -INFO - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:14:39,288 - driver_operate.py - 50 -INFO - click:['xpath', '//*[@index = 4]']
+2020-05-29 10:14:48,304 - driver_operate.py - 50 -INFO - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 10:14:59,551 - driver_operate.py - 50 -INFO - click:['xpath', '//*[@index = 7]']
+2020-05-29 10:15:14,586 - driver_operate.py - 122 -INFO - 进行断言,false?false
+2020-05-29 10:15:14,593 - testrun.py - 38 -INFO - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:15:14,593 - driver_operate.py - 50 -INFO - swipe_left:['0.20', '5']
+2020-05-29 10:15:35,730 - driver_operate.py - 122 -INFO - 进行断言,false?false
+2020-05-29 10:15:35,743 - testrun.py - 38 -INFO - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:15:35,744 - driver_operate.py - 50 -INFO - swipe_left:['0.20', '5']
+2020-05-29 10:15:55,756 - driver_operate.py - 122 -INFO - 进行断言,false?false
+2020-05-29 10:15:55,763 - testrun.py - 38 -INFO - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:15:55,763 - driver_operate.py - 50 -INFO - swipe_up:['0.5', '3']
+2020-05-29 10:16:11,028 - driver_operate.py - 122 -INFO - 进行断言,false?false
+2020-05-29 10:16:11,034 - testrun.py - 38 -INFO - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:16:11,034 - driver_operate.py - 50 -INFO - swipe_down:['0.5', '3']
+2020-05-29 10:16:26,702 - driver_operate.py - 122 -INFO - 进行断言,false?false
+2020-05-29 10:16:26,706 - testrun.py - 38 -INFO - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（右滑）', 'actions': {'swipe_right1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:16:26,706 - driver_operate.py - 50 -INFO - swipe_right:['0.20', '5']
+2020-05-29 10:16:47,838 - driver_operate.py - 122 -INFO - 进行断言,false?false
+2020-05-29 10:20:52,039 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 10:21:07,845 - INFO - testrun.py - 38 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 10:21:07,846 - INFO - driver_operate.py - 50 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 10:21:08,598 - INFO - driver_operate.py - 122 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 10:21:08,614 - INFO - testrun.py - 38 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 10:21:08,615 - INFO - driver_operate.py - 50 - background:['3']
+2020-05-29 10:21:16,796 - INFO - driver_operate.py - 122 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 10:21:16,811 - INFO - testrun.py - 38 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 10:21:16,812 - INFO - driver_operate.py - 50 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 10:21:29,309 - INFO - driver_operate.py - 122 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 10:21:29,323 - INFO - testrun.py - 38 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 10:21:29,323 - INFO - driver_operate.py - 50 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 10:21:43,151 - INFO - driver_operate.py - 122 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 10:21:43,158 - INFO - testrun.py - 38 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:21:43,159 - INFO - driver_operate.py - 50 - click:['xpath', '//*[@index = 4]']
+2020-05-29 10:21:52,095 - INFO - driver_operate.py - 50 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 10:22:04,526 - INFO - driver_operate.py - 50 - click:['xpath', '//*[@index = 7]']
+2020-05-29 10:22:19,230 - INFO - driver_operate.py - 122 - 进行断言,false?false
+2020-05-29 10:22:19,238 - INFO - testrun.py - 38 - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:22:19,238 - INFO - driver_operate.py - 50 - swipe_left:['0.20', '5']
+2020-05-29 10:22:39,346 - INFO - driver_operate.py - 122 - 进行断言,false?false
+2020-05-29 10:22:39,355 - INFO - testrun.py - 38 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:22:39,355 - INFO - driver_operate.py - 50 - swipe_left:['0.20', '5']
+2020-05-29 10:22:59,406 - INFO - driver_operate.py - 122 - 进行断言,false?false
+2020-05-29 10:22:59,413 - INFO - testrun.py - 38 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:22:59,413 - INFO - driver_operate.py - 50 - swipe_up:['0.5', '3']
+2020-05-29 10:23:14,730 - INFO - driver_operate.py - 122 - 进行断言,false?false
+2020-05-29 10:23:14,739 - INFO - testrun.py - 38 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:23:14,739 - INFO - driver_operate.py - 50 - swipe_down:['0.5', '3']
+2020-05-29 10:23:30,359 - INFO - driver_operate.py - 122 - 进行断言,false?false
+2020-05-29 10:23:30,374 - INFO - testrun.py - 38 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（右滑）', 'actions': {'swipe_right1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 10:23:30,375 - INFO - driver_operate.py - 50 - swipe_right:['0.20', '5']
+2020-05-29 10:23:51,417 - INFO - driver_operate.py - 122 - 进行断言,false?false
+2020-05-29 11:21:33,604 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:21:33,796 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:21:48,331 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:21:48,523 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:21:49,896 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:21:50,083 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:22:57,479 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:22:57,667 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:23:15,536 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:23:15,724 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:23:34,217 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:23:34,407 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:23:55,156 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:23:55,355 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:25:11,884 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:25:12,086 - INFO - testrun.py - 25 - 加载配置，并连接手机...
+2020-05-29 11:26:35,460 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:26:35,659 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:27:59,171 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:27:59,371 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:28:06,895 - INFO - appium_run.py - 6 - 命令行启动appium
+2020-05-29 11:28:07,091 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:37:22,663 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 11:37:22,859 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:39:10,214 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 11:39:10,407 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:40:14,157 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 11:40:14,359 - INFO - testrun.py - 25 - 加载配置，并连接手机...
+2020-05-29 11:40:41,034 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 11:40:41,256 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 11:42:59,446 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:15:21,780 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:15:21,976 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:15:56,112 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:15:56,300 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:16:42,171 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:16:42,364 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:17:32,244 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:17:32,451 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:22:03,182 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:22:03,378 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:23:16,371 - INFO - appium_operata.py - 35 - taskkill -f -pid     0
+
+2020-05-29 12:23:32,113 - INFO - appium_operata.py - 35 - taskkill -f -pid     0
+
+2020-05-29 12:23:37,481 - INFO - appium_operata.py - 35 - taskkill -f -pid     0
+
+2020-05-29 12:24:16,684 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:24:31,690 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:24:31,884 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:25:36,353 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:25:36,543 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:26:56,004 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:28:36,526 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:28:56,623 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:29:06,695 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:29:07,767 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:29:10,900 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:29:11,971 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:29:23,342 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:30:02,007 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:30:32,639 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:30:48,697 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:30:54,540 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:31:00,761 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:31:04,606 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:31:13,013 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:31:27,726 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:32:07,150 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:32:07,334 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:33:04,553 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:33:04,744 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:33:47,195 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:33:47,402 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:33:57,941 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:34:03,628 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:34:03,818 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:34:10,730 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:34:13,278 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:34:21,026 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:34:24,543 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:34:26,382 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:34:33,664 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:34:33,855 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:34:49,777 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 12:34:49,777 - INFO - driver_operate.py - 54 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 12:34:50,350 - INFO - driver_operate.py - 154 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 12:34:50,360 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 12:34:50,361 - INFO - driver_operate.py - 54 - background:['3']
+2020-05-29 12:34:58,006 - INFO - driver_operate.py - 154 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 12:34:58,016 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 12:34:58,017 - INFO - driver_operate.py - 54 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 12:35:07,625 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 12:35:07,625 - INFO - driver_operate.py - 54 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 12:35:07,710 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:35:07,710 - INFO - driver_operate.py - 54 - click:['xpath', '//*[@index = 4]']
+2020-05-29 12:35:13,096 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:35:28,446 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:35:28,637 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:35:43,648 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 12:35:43,649 - INFO - driver_operate.py - 54 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 12:35:44,239 - INFO - driver_operate.py - 154 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 12:35:44,243 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 12:35:44,243 - INFO - driver_operate.py - 54 - background:['3']
+2020-05-29 12:35:51,843 - INFO - driver_operate.py - 154 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 12:35:51,850 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 12:35:51,850 - INFO - driver_operate.py - 54 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 12:36:03,923 - INFO - driver_operate.py - 154 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 12:36:03,939 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 12:36:03,940 - INFO - driver_operate.py - 54 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 12:36:19,584 - INFO - driver_operate.py - 154 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 12:36:19,592 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:36:19,592 - INFO - driver_operate.py - 54 - click:['xpath', '//*[@index = 4]']
+2020-05-29 12:36:32,116 - INFO - driver_operate.py - 54 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 12:36:43,313 - INFO - driver_operate.py - 54 - click:['xpath', '//*[@index = 7]']
+2020-05-29 12:36:57,235 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:36:57,241 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:36:57,242 - INFO - driver_operate.py - 54 - swipe_left:['0.20', '5']
+2020-05-29 12:37:17,077 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:37:17,084 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:37:17,084 - INFO - driver_operate.py - 54 - swipe_left:['0.20', '5']
+2020-05-29 12:37:37,025 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:37:37,029 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:37:37,029 - INFO - driver_operate.py - 54 - swipe_up:['0.5', '3']
+2020-05-29 12:37:52,421 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:37:52,428 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:37:52,428 - INFO - driver_operate.py - 54 - swipe_down:['0.5', '3']
+2020-05-29 12:38:08,310 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:38:08,317 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（右滑）', 'actions': {'swipe_right1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:38:08,317 - INFO - driver_operate.py - 54 - swipe_right:['0.20', '5']
+2020-05-29 12:38:29,357 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:38:33,320 - INFO - appium_operata.py - 35 - taskkill -f -pid str(pid)
+2020-05-29 12:39:15,830 - INFO - appium_operata.py - 34 - taskkill -f -pid str(pid)
+2020-05-29 12:39:16,476 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 12:39:16,671 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 12:39:31,850 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 12:39:31,851 - INFO - driver_operate.py - 54 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 12:39:32,494 - INFO - driver_operate.py - 154 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 12:39:32,498 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 12:39:32,498 - INFO - driver_operate.py - 54 - background:['3']
+2020-05-29 12:39:40,146 - INFO - driver_operate.py - 154 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 12:39:40,161 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 12:39:40,161 - INFO - driver_operate.py - 54 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 12:39:50,378 - INFO - driver_operate.py - 154 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 12:39:50,385 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 12:39:50,385 - INFO - driver_operate.py - 54 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 12:40:09,143 - INFO - driver_operate.py - 154 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 12:40:09,149 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:40:09,149 - INFO - driver_operate.py - 54 - click:['xpath', '//*[@index = 4]']
+2020-05-29 12:40:22,205 - INFO - driver_operate.py - 54 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 12:40:32,245 - INFO - driver_operate.py - 54 - click:['xpath', '//*[@index = 7]']
+2020-05-29 12:40:45,977 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:40:45,984 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:40:45,984 - INFO - driver_operate.py - 54 - swipe_left:['0.20', '5']
+2020-05-29 12:41:08,579 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:41:08,586 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:41:08,586 - INFO - driver_operate.py - 54 - swipe_left:['0.20', '5']
+2020-05-29 12:41:29,854 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:41:29,860 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:41:29,860 - INFO - driver_operate.py - 54 - swipe_up:['0.5', '3']
+2020-05-29 12:41:43,761 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:41:43,768 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:41:43,768 - INFO - driver_operate.py - 54 - swipe_down:['0.5', '3']
+2020-05-29 12:41:58,644 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:41:58,659 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（右滑）', 'actions': {'swipe_right1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 12:41:58,660 - INFO - driver_operate.py - 54 - swipe_right:['0.20', '5']
+2020-05-29 12:42:21,171 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 12:42:25,460 - INFO - appium_operata.py - 34 - taskkill -f -pid str(pid)
+2020-05-29 13:46:06,846 - INFO - appium_operata.py - 34 - taskkill -f -pid str(pid)
+2020-05-29 13:46:07,587 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 13:46:07,794 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 13:46:31,343 - INFO - appium_operata.py - 34 - taskkill -f -pid str(pid)
+2020-05-29 13:47:16,178 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 13:47:16,369 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:00:55,000 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:00:55,197 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:01:12,396 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:01:12,396 - INFO - driver_operate.py - 53 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 14:01:13,231 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:01:13,231 - INFO - driver_operate.py - 53 - background:['3']
+2020-05-29 14:01:21,064 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 14:01:21,064 - INFO - driver_operate.py - 53 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 14:01:31,777 - INFO - driver_operate.py - 154 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 14:01:31,796 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 14:01:31,796 - INFO - driver_operate.py - 53 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 14:01:47,423 - INFO - driver_operate.py - 154 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 14:01:47,431 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:01:47,431 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 4]']
+2020-05-29 14:01:58,007 - INFO - driver_operate.py - 53 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 14:02:11,704 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 7]']
+2020-05-29 14:02:25,562 - INFO - driver_operate.py - 154 - 进行断言,false?false
+2020-05-29 14:02:25,577 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:02:25,577 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:02:40,255 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:02:40,439 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:02:56,371 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:02:56,372 - INFO - driver_operate.py - 53 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 14:02:57,190 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:02:57,190 - INFO - driver_operate.py - 53 - background:['3']
+2020-05-29 14:03:04,810 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 14:03:04,810 - INFO - driver_operate.py - 53 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 14:03:16,791 - INFO - driver_operate.py - 154 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 14:03:16,796 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 14:03:16,796 - INFO - driver_operate.py - 53 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 14:03:32,416 - INFO - driver_operate.py - 154 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 14:03:32,422 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:03:32,422 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 4]']
+2020-05-29 14:03:42,567 - INFO - driver_operate.py - 53 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 14:05:55,521 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:05:55,715 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:06:10,566 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:06:10,567 - INFO - driver_operate.py - 53 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 14:06:11,201 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:06:11,205 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:06:11,205 - INFO - driver_operate.py - 53 - background:['3']
+2020-05-29 14:06:18,871 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:06:18,885 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 14:06:18,886 - INFO - driver_operate.py - 53 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 14:06:30,466 - INFO - driver_operate.py - 153 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 14:06:30,480 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 14:06:30,481 - INFO - driver_operate.py - 53 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 14:06:44,948 - INFO - driver_operate.py - 153 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 14:06:44,963 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:06:44,963 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 4]']
+2020-05-29 14:06:55,116 - INFO - driver_operate.py - 53 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 14:07:07,540 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 7]']
+2020-05-29 14:07:22,979 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:07:22,994 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:07:22,994 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:07:46,619 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:07:46,626 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:07:46,626 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:08:07,651 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:08:07,664 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:08:07,664 - INFO - driver_operate.py - 53 - swipe_up:['0.5', '3']
+2020-05-29 14:08:22,844 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:08:22,851 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:08:22,851 - INFO - driver_operate.py - 53 - swipe_down:['0.5', '3']
+2020-05-29 14:08:36,867 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:08:36,874 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（右滑）', 'actions': {'swipe_right1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:08:36,874 - INFO - driver_operate.py - 53 - swipe_right:['0.20', '5']
+2020-05-29 14:08:56,794 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:10:41,452 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:10:41,641 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:10:56,693 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:10:56,694 - INFO - driver_operate.py - 53 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 14:10:57,304 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:10:57,311 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:10:57,311 - INFO - driver_operate.py - 53 - background:['3']
+2020-05-29 14:11:04,878 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:11:04,900 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 14:11:04,901 - INFO - driver_operate.py - 53 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 14:11:16,968 - INFO - driver_operate.py - 153 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 14:11:16,979 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 14:11:16,979 - INFO - driver_operate.py - 53 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 14:11:33,083 - INFO - driver_operate.py - 153 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 14:11:33,105 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:11:33,105 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 4]']
+2020-05-29 14:11:43,194 - INFO - driver_operate.py - 53 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 14:11:55,653 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 7]']
+2020-05-29 14:12:08,828 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:12:08,841 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:12:08,841 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:12:29,849 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:12:29,860 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:12:29,860 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:12:50,912 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:12:50,935 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:12:50,936 - INFO - driver_operate.py - 53 - swipe_up:['0.5', '3']
+2020-05-29 14:13:05,829 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:13:05,857 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:13:05,857 - INFO - driver_operate.py - 53 - swipe_down:['0.5', '3']
+2020-05-29 14:13:20,369 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:13:20,396 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（右滑）', 'actions': {'swipe_right1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:13:20,396 - INFO - driver_operate.py - 53 - swipe_right:['0.20', '5']
+2020-05-29 14:13:41,729 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:14:29,513 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:14:39,113 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:18:56,360 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:18:56,547 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:19:12,537 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:19:12,538 - INFO - driver_operate.py - 53 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 14:19:13,186 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:19:13,200 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:19:13,200 - INFO - driver_operate.py - 53 - background:['3']
+2020-05-29 14:19:20,999 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:19:21,002 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 14:19:21,003 - INFO - driver_operate.py - 53 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 14:19:33,190 - INFO - driver_operate.py - 153 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 14:19:33,198 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 14:19:33,198 - INFO - driver_operate.py - 53 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 14:19:47,681 - INFO - driver_operate.py - 153 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 14:19:47,696 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:19:47,697 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 4]']
+2020-05-29 14:19:53,100 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:19:53,285 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:20:36,036 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:20:36,224 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:20:52,273 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:20:52,274 - INFO - driver_operate.py - 53 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 14:20:52,967 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:20:52,980 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:20:52,981 - INFO - driver_operate.py - 53 - background:['3']
+2020-05-29 14:21:01,256 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:21:01,265 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 14:21:01,265 - INFO - driver_operate.py - 53 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 14:21:13,555 - INFO - driver_operate.py - 153 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 14:21:13,570 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 14:21:13,570 - INFO - driver_operate.py - 53 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 14:21:29,677 - INFO - driver_operate.py - 153 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 14:21:29,692 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:21:29,692 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 4]']
+2020-05-29 14:21:40,071 - INFO - driver_operate.py - 53 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 14:21:51,478 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 7]']
+2020-05-29 14:22:06,492 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:22:06,507 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:22:06,507 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:22:27,944 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:22:27,959 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:22:27,959 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:22:47,887 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:22:47,896 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:22:47,896 - INFO - driver_operate.py - 53 - swipe_up:['0.5', '3']
+2020-05-29 14:23:03,612 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:23:03,618 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:23:03,618 - INFO - driver_operate.py - 53 - swipe_down:['0.5', '3']
+2020-05-29 14:23:19,182 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:23:19,196 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（右滑）', 'actions': {'swipe_right1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:23:19,197 - INFO - driver_operate.py - 53 - swipe_right:['0.20', '5']
+2020-05-29 14:23:40,679 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:25:02,722 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:25:02,930 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:25:18,878 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:25:18,878 - INFO - driver_operate.py - 53 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 14:25:19,553 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:25:19,573 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:25:19,573 - INFO - driver_operate.py - 53 - background:['3']
+2020-05-29 14:25:27,755 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:25:27,769 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 14:25:27,769 - INFO - driver_operate.py - 53 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 14:25:39,928 - INFO - driver_operate.py - 153 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 14:25:39,948 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 14:25:39,949 - INFO - driver_operate.py - 53 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 14:25:56,042 - INFO - driver_operate.py - 153 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 14:25:56,053 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:25:56,053 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 4]']
+2020-05-29 14:26:06,561 - INFO - driver_operate.py - 53 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 14:26:45,558 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:26:45,757 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:27:11,143 - INFO - appium_operata.py - 8 - 命令行启动appium
+2020-05-29 14:27:11,334 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:27:27,449 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:27:27,449 - INFO - driver_operate.py - 53 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 14:27:28,170 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:27:28,175 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:27:28,175 - INFO - driver_operate.py - 53 - background:['3']
+2020-05-29 14:27:36,446 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:27:36,451 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 14:27:36,451 - INFO - driver_operate.py - 53 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 14:27:48,973 - INFO - driver_operate.py - 153 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 14:27:48,979 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 14:27:48,979 - INFO - driver_operate.py - 53 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 14:28:04,075 - INFO - driver_operate.py - 153 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 14:28:04,083 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:28:04,084 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 4]']
+2020-05-29 14:28:13,064 - INFO - driver_operate.py - 53 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 14:28:23,009 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 7]']
+2020-05-29 14:28:35,162 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:28:35,179 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:28:35,179 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:28:55,113 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:28:55,124 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:28:55,124 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:29:15,092 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:29:15,111 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:29:15,112 - INFO - driver_operate.py - 53 - swipe_up:['0.5', '3']
+2020-05-29 14:29:30,428 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:29:30,438 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:29:30,439 - INFO - driver_operate.py - 53 - swipe_down:['0.5', '3']
+2020-05-29 14:29:46,065 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:29:46,080 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（右滑）', 'actions': {'swipe_right1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:29:46,080 - INFO - driver_operate.py - 53 - swipe_right:['0.20', '5']
+2020-05-29 14:30:07,080 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:34:56,776 - INFO - appium_operata.py - 9 - 命令行启动appium
+2020-05-29 14:34:56,962 - INFO - testrun.py - 24 - 加载配置，并连接手机...
+2020-05-29 14:35:12,987 - INFO - testrun.py - 39 - 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:35:12,988 - INFO - driver_operate.py - 53 - setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+2020-05-29 14:35:13,690 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:35:13,698 - INFO - testrun.py - 39 - 执行测试用例{'ID': 2.0, 'PRECONDITION': '从在理APP首页', 'DESCRIPTION': '后台驻留5秒返回', 'actions': {'background1': ['3']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+2020-05-29 14:35:13,698 - INFO - driver_operate.py - 53 - background:['3']
+2020-05-29 14:35:21,795 - INFO - driver_operate.py - 153 - 进行断言,.MainActivity?.MainActivity
+2020-05-29 14:35:21,803 - INFO - testrun.py - 39 - 执行测试用例{'ID': 3.0, 'PRECONDITION': '从桌面返回', 'DESCRIPTION': '同意协议', 'actions': {'click1': ['xpath', "//*[@text = '同意']"]}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '手机号/邮箱地址'}}
+2020-05-29 14:35:21,803 - INFO - driver_operate.py - 53 - click:['xpath', "//*[@text = '同意']"]
+2020-05-29 14:35:33,723 - INFO - driver_operate.py - 153 - 进行断言,手机号/邮箱地址?手机号/邮箱地址
+2020-05-29 14:35:33,727 - INFO - testrun.py - 39 - 执行测试用例{'ID': 4.0, 'PRECONDITION': '后台驻留返回', 'DESCRIPTION': '输入手机号', 'actions': {'send_keys1': ['class_name', 'android.widget.EditText', '15692326910']}, 'assert': {'checkpoint': 'get_text', 'assert_element': 'class_name|android.widget.EditText', 'expect_value': '15692326910, 手机号/邮箱地址'}}
+2020-05-29 14:35:33,727 - INFO - driver_operate.py - 53 - send_keys:['class_name', 'android.widget.EditText', '15692326910']
+2020-05-29 14:35:48,245 - INFO - driver_operate.py - 153 - 进行断言,15692326910, 手机号/邮箱地址?15692326910, 手机号/邮箱地址
+2020-05-29 14:35:48,255 - INFO - testrun.py - 39 - 执行测试用例{'ID': 5.0, 'PRECONDITION': '从输入手机号', 'DESCRIPTION': '输入密码登录', 'actions': {'click1': ['xpath', '//*[@index = 4]'], 'send_keys2': ['xpath', '//*[@index = 5]', 'uwa123456'], 'click3': ['xpath', '//*[@index = 7]']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:35:48,255 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 4]']
+2020-05-29 14:35:58,434 - INFO - driver_operate.py - 53 - send_keys:['xpath', '//*[@index = 5]', 'uwa123456']
+2020-05-29 14:36:11,277 - INFO - driver_operate.py - 53 - click:['xpath', '//*[@index = 7]']
+2020-05-29 14:36:23,515 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:36:23,535 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:36:23,535 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:36:43,505 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:36:43,509 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（左滑）', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:36:43,509 - INFO - driver_operate.py - 53 - swipe_left:['0.20', '5']
+2020-05-29 14:37:03,460 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:37:03,475 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指上滑实例', 'actions': {'swipe_up1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:37:03,476 - INFO - driver_operate.py - 53 - swipe_up:['0.5', '3']
+2020-05-29 14:37:19,330 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:37:19,349 - INFO - testrun.py - 39 - 执行测试用例{'ID': nan, 'PRECONDITION': nan, 'DESCRIPTION': '手指下滑示例', 'actions': {'swipe_down1': ['0.5', '3']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:37:19,349 - INFO - driver_operate.py - 53 - swipe_down:['0.5', '3']
+2020-05-29 14:37:34,368 - INFO - driver_operate.py - 153 - 进行断言,false?false
+2020-05-29 14:37:34,382 - INFO - testrun.py - 39 - 执行测试用例{'ID': 6.0, 'PRECONDITION': nan, 'DESCRIPTION': '轮播图滚动（右滑）', 'actions': {'swipe_right1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}
+2020-05-29 14:37:34,383 - INFO - driver_operate.py - 53 - swipe_right:['0.20', '5']
+2020-05-29 14:37:55,383 - INFO - driver_operate.py - 153 - 进行断言,false?false

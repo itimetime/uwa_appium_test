@@ -1,0 +1,4 @@
+INFO     root:testrun.py:24 加载配置，并连接手机...
+INFO     root:testrun.py:39 执行测试用例{'ID': 1.0, 'PRECONDITION': '无', 'DESCRIPTION': '加载配置，打开在理App', 'actions': {'setting1': ['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']}, 'assert': {'checkpoint': 'get_activity', 'assert_element': 'nan', 'expect_value': '.MainActivity'}}
+INFO     root:driver_operate.py:53 setting:['{"appPackage":"com.uwa.mproduct","appActivity":"com.uwa.mproduct.MainActivity"}']
+INFO     root:driver_operate.py:153 进行断言,.MainActivity?.MainActivity

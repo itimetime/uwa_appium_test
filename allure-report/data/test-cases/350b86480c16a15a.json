@@ -1,0 +1,138 @@
+{
+  "uid" : "350b86480c16a15a",
+  "name" : "test_run[case5]",
+  "fullName" : "testrun.TestClass#test_run",
+  "historyId" : "6f09b7e429bfe5ea2b128c32aa42c867",
+  "time" : {
+    "start" : 1590734183535,
+    "stop" : 1590734203507,
+    "duration" : 19972
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "swipe_left",
+      "time" : {
+        "start" : 1590734183536,
+        "stop" : 1590734201476,
+        "duration" : 17940
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "51806cb77909dc20",
+        "name" : "操作参数",
+        "source" : "51806cb77909dc20.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "get_attribute",
+      "time" : {
+        "start" : 1590734202329,
+        "stop" : 1590734203506,
+        "duration" : 1177
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "59cd9b80c4238e73",
+        "name" : "操作参数",
+        "source" : "59cd9b80c4238e73.attach",
+        "type" : "text/plain",
+        "size" : 32
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "assert",
+      "time" : {
+        "start" : 1590734203506,
+        "stop" : 1590734203507,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bee6cd18801aad71",
+        "name" : "断言内容",
+        "source" : "bee6cd18801aad71.attach",
+        "type" : "text/plain",
+        "size" : 110
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ {
+      "uid" : "488f66f6db3e6b76",
+      "name" : "log",
+      "source" : "488f66f6db3e6b76.txt",
+      "type" : "text/plain",
+      "size" : 418
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "在理APP测试"
+  }, {
+    "name" : "suite",
+    "value" : "testrun"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-N6F5SUG"
+  }, {
+    "name" : "thread",
+    "value" : "9968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testrun"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "350b86480c16a15a.json",
+  "parameterValues" : [ "{'ID': 6.0, 'PRECONDITION': '从登录页面进入', 'DESCRIPTION': '轮播图滚动', 'actions': {'swipe_left1': ['0.20', '5']}, 'assert': {'checkpoint': 'get_attribute', 'assert_element': 'xpath|//*[@index = 0]|scrollable', 'expect_value': 'false'}}" ]
+}
