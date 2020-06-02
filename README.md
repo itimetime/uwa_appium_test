@@ -51,27 +51,27 @@ uwa-appium-test
 
 #### 测试用例相关书写方法
 
-##### 操作方法
+##### 操作方法（`|`用`竖杠`代替）
 
-| 方法名      | 值                                                           | 说明                                                         |
-| ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| setting     | {"appPackage":"com.uwa.mproduct"}                            | 可设置应用启动的参数，没有填写将使用预设设置                 |
-| background  | 3                                                            | 设置后台驻留，值为秒数                                       |
-| click       | xpath`|`//`*`[@text  = '同意']//*[@text  = '同意']           | 元素点击，查找元素可以选择css、xpath、id、class_name         |
-| send_keys   | class_name`|`android.widget.EditText`|`15692326910           | 发送数据，执行过程是查找元素和发送值                         |
-| swipe_left  | 0.20`|`5                                                     | 手指向左划，第一个值代表x轴的20%的时候往左滑，第二个值代表滑动次数。 |
-| swipe_right | 同上                                                         |                                                              |
-| swipe_up    | 同上                                                         |                                                              |
-| swipe_down  | 同上                                                         |                                                              |
-| keycode     | 20                                                           | 输入安卓keycode，可模拟音量加减、返回等操作                  |
+| 方法名      | 值                                                       | 说明                                                         |
+| ----------- | -------------------------------------------------------- | ------------------------------------------------------------ |
+| setting     | {"appPackage":"com.uwa.mproduct"}                        | 可设置应用启动的参数，没有填写将使用预设设置                 |
+| background  | 3                                                        | 设置后台驻留，值为秒数                                       |
+| click       | xpath`竖杠`//`*`[@text  = '同意']//*[@text  = '同意']    | 元素点击，查找元素可以选择css、xpath、id、class_name         |
+| send_keys   | class_name`竖杠`android.widget.EditText`竖杠`15692326910 | 发送数据，执行过程是查找元素和发送值                         |
+| swipe_left  | 0.20`竖杠`5                                              | 手指向左划，第一个值代表x轴的20%的时候往左滑，第二个值代表滑动次数。 |
+| swipe_right | 同上                                                     |                                                              |
+| swipe_up    | 同上                                                     |                                                              |
+| swipe_down  | 同上                                                     |                                                              |
+| keycode     | 20                                                       | 输入安卓keycode，可模拟音量加减、返回等操作                  |
 
 ##### 断言方法
 
-| 方法名        | 值                                   | 说明                                                       |
-| ------------- | ------------------------------------ | ---------------------------------------------------------- |
-| get_activity  | None                                 | 返回当前应用的activity，可判断应用是否能打开               |
-| get_text      | class_name`|`android.widget.EditText | 查找元素，返回当前元素显示文本                             |
-| get_attribute | xpath`|`//*[@index = 0]`|`scrollable | 获取Android元素的attribute，最后一个元素可跟id，text等元素 |
+| 方法名        | 值                                         | 说明                                                       |
+| ------------- | ------------------------------------------ | ---------------------------------------------------------- |
+| get_activity  | None                                       | 返回当前应用的activity，可判断应用是否能打开               |
+| get_text      | class_name`竖杠`android.widget.EditText    | 查找元素，返回当前元素显示文本                             |
+| get_attribute | xpath`竖杠`//*[@index = 0]`竖杠`scrollable | 获取Android元素的attribute，最后一个元素可跟id，text等元素 |
 
 ##### 更新说明
 
