@@ -42,10 +42,10 @@ uwa-appium-test
 │   └─ case.xlsx
 │
 └─tools  - 辅助脚本
-   │  appium_operata.py  - Appium启动脚本
-   │  folder_check.py  - 判断目录结构脚本
-   │  keycode_parse.py - 安卓keycode解析脚本
-   │  logger.py  - 日志模块
+   ├─appium_operata.py  - Appium启动脚本
+   ├─folder_check.py  - 判断目录结构脚本
+   ├─keycode_parse.py - 安卓keycode解析脚本
+   ├─logger.py  - 日志模块
    └─ read_case.py - 测试用例读取脚本
 ```
 
