@@ -16,7 +16,7 @@ python 3.6以上
 
    ```
    pip install -r requirements.txt  (只在首次运行的时候)
-   python test.py
+   python testrun.py
    ```
 
 3. 执行后从allure-report中获取报告。
