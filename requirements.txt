@@ -7,7 +7,7 @@ colorama==0.4.3
 enum34==1.1.10
 et-xmlfile==1.0.1
 jdcal==1.4.1
-lxml==4.5.1
+lxml==4.9.1
 more-itertools==8.3.0
 namedlist==1.7
 numpy==1.18.4
